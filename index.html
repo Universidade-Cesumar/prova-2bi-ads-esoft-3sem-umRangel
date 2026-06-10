@@ -8,13 +8,22 @@
 <body>
     <main>
         <h1>Controle de Almoxarifado</h1>
-        <form action="">
-            <input type="text"id="input-nome">
-            <input type="text"  id="input-quantidade">
-            <button id="btn-cadastrar"></button>
+        <form action="" id="formulario">
+            <input type="text" id="input-nome">
+            <input type="number" id="input-quantidade">
+            <button type="submit" id="btn-cadastrar"></button>
         </form>
-
-        <ul id="lista-materiais"></ul>
+        <table>
+          <thead>
+            <tr>
+              <th>Material</th>
+              <th>Quantidades</th>
+            </tr>
+          </thead>
+          <tbody id="lista-materiais"></tbody>
+        </table>
     </main>
+    
+    <script src="main.js"></script>
 </body>
 </html>
