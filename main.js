@@ -13,9 +13,31 @@ const buscarProdutos = async () => {
     const linha = document.createElement("tr");
 
     linha.innerHTML = `
-      <td>${produto.PRODUTO}</td> 
+      <td>${produto.MATERIAL}</td> 
       <td>${produto.QUANTIDADE}</td>
     `;
     lista.appendChild(linha);
   });
 };
+
+formulario.addEventListener("submit", async (evento) =>{
+    evento.preventDefault
+
+    const novoMaterial = {
+        MATERIAL: document.getElementById("input-nome").value
+        QUANTIDADE: Number(document.getElementById("input-quantidade").value)
+    }
+
+    const resposta = await fetch(API_URL, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/JSON"
+        }
+        body: JSON.stringify("novoMaterial")
+    })
+
+    if(resposta.ok){
+        formulario.reset()
+        buscarProdutos();
+    }
+})
