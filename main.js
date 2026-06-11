@@ -9,12 +9,12 @@ const buscarProdutos = async () => {
 
   tabela.innerHTML = "";
 
-  dados.forEach((produto) => {
+  dados.forEach((material) => {
     const linha = document.createElement("tr");
 
     linha.innerHTML = `
-      <td>${produto.MATERIAL}</td> 
-      <td>${produto.QUANTIDADE}</td>
+      <td>${material.MATERIAL}</td> 
+      <td>${material.QUANTIDADE}</td>
     `;
     tabela.appendChild(linha);
   });
