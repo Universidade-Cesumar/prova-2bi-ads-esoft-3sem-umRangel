@@ -1,13 +1,18 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/B74p-HKt
-☁️ Back-end e Armazenamento (MockAPI)
-O MockAPI.io permite fazer um back-end completo com simplicidade, gerando dados e fornecendo endpoints em nuvem para que a front-end possa realizar operações sem a necessidade de configurar um banco de dados local.
-Atuará como o servidor centralizado que armazenará e gerenciará o inventário de materiais de saúde.
+## ☁️ Back-end e Armazenamento (MockAPI)
 
-A API irá disponibilizar endpoints para que possamos gerenciar os recursos do almoxarifado como CREATE, READ, UPDATE E DELETE do CRUD. E também, Filtragem, Ordenação e Paginação
+Utilizamos o **[MockAPI.io](https://mockapi.io/)** para simular um back-end completo. 
 
-🛠️ Tecnologias Utilizados
-Serão utilizadas as tecnologias:
-● HTML: Estruturação semântica das páginas.
-● CSS: Estilização, layout e responsividade.
-● JavaScript: Lógica de programação e manipulação dinâmica.
-● MockAPI.io: Realizar requisições assíncronas HTTP para a API.
+Nesta aplicação, o MockAPI atua como o servidor centralizado responsável por armazenar e gerenciar o inventário de materiais de saúde. A API disponibiliza endpoints RESTful para o gerenciamento completo dos recursos do almoxarifado, suportando:
+
+* **Operações CRUD:** Criação (Create), Leitura (Read), Atualização (Update) e Exclusão (Delete) de itens.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
+
+* **HTML:** Estruturação das páginas.
+* **CSS:** Estilização, layout e design.
+* **JavaScript:** Lógica de programação, manipulação dinâmica do DOM e consumo da API.
+* **MockAPI.io:** Plataforma em nuvem para simulação da API REST e realização de requisições HTTP assíncronas.
