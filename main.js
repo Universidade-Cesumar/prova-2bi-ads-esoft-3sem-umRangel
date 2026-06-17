@@ -34,6 +34,17 @@ const buscarProdutos = async () => {
       }
 
       const novaQuantidade = material.QUANTIDADE - quantidadeRetirada;
+
+      const respostaPut = await fetch(`${API_URL}/${material.id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ QUANTIDADE: novaQuantidade })
+      });
+
+      if (respostaPut.ok) {
+        inputRetirada.value = "";
+        buscarProdutos();
+      }
     });
 
     tabela.appendChild(linha);
