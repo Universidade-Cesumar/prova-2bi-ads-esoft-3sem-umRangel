@@ -23,7 +23,19 @@ const buscarProdutos = async () => {
 
     const btnBaixar = linha.querySelector(".btn-baixar");
     const btnExcluir = linha.querySelector(".btn-excluir");
-    
+
+    btnBaixar.addEventListener("click", async () => {
+      const inputRetirada = document.getElementById("input-retirada");
+      const quantidadeRetirada = Number(inputRetirada.value);
+
+      if (!validarRetirada(material.QUANTIDADE, quantidadeRetirada)) {
+        alert("Operação inválida. Verifique o valor digitado.");
+        return;
+      }
+
+      const novaQuantidade = material.QUANTIDADE - quantidadeRetirada;
+    });
+
     tabela.appendChild(linha);
   });
 };
