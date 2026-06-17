@@ -3,6 +3,16 @@ const API_URL = "https://6a1c77bf8858a003817be931.mockapi.io/api/v1/Material";
 const formulario = document.getElementById("formulario");
 const tabela = document.getElementById("lista-materiais");
 
+const validarRetirada = (estoqueAtual, quantidadeRetirada) => {
+  if (quantidadeRetirada <= 0) {
+    return false;
+  }
+  if (quantidadeRetirada > estoqueAtual) {
+    return false;
+  }
+  return true;
+};
+
 const buscarProdutos = async () => {
   const resposta = await fetch(API_URL);
   const dados = await resposta.json();
