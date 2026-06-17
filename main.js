@@ -47,6 +47,16 @@ const buscarProdutos = async () => {
       }
     });
 
+    btnExcluir.addEventListener("click", async () => {
+      const respostaDelete = await fetch(`${API_URL}/${material.id}`, {
+        method: "DELETE"
+      });
+
+      if (respostaDelete.ok) {
+        buscarProdutos();
+      }
+    });
+
     tabela.appendChild(linha);
   });
 };
