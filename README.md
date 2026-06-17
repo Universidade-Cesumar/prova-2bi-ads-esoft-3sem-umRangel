@@ -16,3 +16,10 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 * **CSS:** Estilização, layout e design.
 * **JavaScript:** Lógica de programação, manipulação dinâmica do DOM e consumo da API.
 * **MockAPI.io:** Plataforma em nuvem para simulação da API REST e realização de requisições HTTP assíncronas.
+
+## 🚀 Link do meu projeto!
+
+1. Clone este repositório:
+~~~ shell
+   git clone https://github.com/Universidade-Cesumar/prova-2bi-ads-esoft-3sem-umRangel.git
+~~~
