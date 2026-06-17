@@ -84,3 +84,11 @@ table {
     font-size: 14px;
     margin-right: 5px;
 }
+
+.btn-baixar {
+    background-color: #28a745;
+}
+
+.btn-excluir {
+    background-color: #dc3545;
+}
