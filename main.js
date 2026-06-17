@@ -15,6 +15,10 @@ const buscarProdutos = async () => {
     linha.innerHTML = `
       <td>${material.MATERIAL}</td> 
       <td>${material.QUANTIDADE}</td>
+      <td>
+        <button class="btn-baixar">Baixar</button>
+        <button class="btn-excluir">Excluir</button>
+      </td>
     `;
     tabela.appendChild(linha);
   });
