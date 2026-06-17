@@ -20,6 +20,10 @@ const buscarProdutos = async () => {
         <button class="btn-excluir">Excluir</button>
       </td>
     `;
+
+    const btnBaixar = linha.querySelector(".btn-baixar");
+    const btnExcluir = linha.querySelector(".btn-excluir");
+    
     tabela.appendChild(linha);
   });
 };
