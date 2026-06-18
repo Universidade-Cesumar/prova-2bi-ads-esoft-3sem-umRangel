@@ -19,7 +19,11 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ## 🚀 Link do meu projeto!
 
-1. Clone este repositório:
+1. Acesse o terminal do VScode.
+2. Digite "Git clone".
+3. Cole URL do repositório.
 ~~~ shell
    git clone https://github.com/Universidade-Cesumar/prova-2bi-ads-esoft-3sem-umRangel.git
 ~~~
+4. Pressione Enter.
+5. VScode abrirá o projeto.
