@@ -21,6 +21,11 @@ const buscarProdutos = async () => {
 
   tabela.innerHTML = "";
 
+  const termoBusca = inputBusca.value.toLowerCase();
+  const dadosFiltrados = dados.filter((material) => 
+  material.MATERIAL.toLowerCase().includes(termoBusca)
+  );
+
   dados.forEach((material) => {
     const linha = document.createElement("tr");
 
