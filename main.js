@@ -82,6 +82,8 @@ const buscarProdutos = async () => {
 
 buscarProdutos();
 
+inputBusca.addEventListener("input", buscarProdutos);
+
 formulario.addEventListener("submit", async (evento) => {
   evento.preventDefault(); 
 
