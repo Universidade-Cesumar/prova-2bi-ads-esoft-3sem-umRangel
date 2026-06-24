@@ -26,6 +26,8 @@ const buscarProdutos = async () => {
   material.MATERIAL.toLowerCase().includes(termoBusca)
   );
 
+  document.getElementById("total-itens").innerText = dadosFiltrados.length;
+
   dados.forEach((material) => {
     const linha = document.createElement("tr");
 
